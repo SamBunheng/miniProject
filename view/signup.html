@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#172D44',
+                    secondary: '#4A4B51',
+                    accent: '#F7B703',
+                    description: '#88959A'
+                },
+            },
+        },
+    }
+    </script>
+</head>
+<body class="min-h-screen overflow-hidden">
+    <div class="flex flex-col-reverse md:flex-row min-h-screen">
+        <!-- Blue Background Content -->
+        <div class="w-full md:w-[50%] lg:w-[45%] bg-primary p-8 md:p-14 lg:p-20 flex items-center justify-center relative min-h-screen">
+            <!-- Small Logo -->
+            <img src="../asset/image/logo (1).png" alt="Logo" class="w-24 h-24 absolute top-4 left-4 sm:top-12 sm:left-20 md:top-2 md:left-10 lg:left-28" />
+            <div class="max-w-md w-full mt-20 sm:mt-24 md:mt-8 lg:mt-0">
+                <div class="text-3xl text-white mb-4">Get started Now</div>
+                <div class="text-base text-white mb-8">
+                    Enter your Credentials to access your account
+                </div>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-white">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white">Email address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-white">Password</label>
+                        <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" placeholder="Enter your password">
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full mt-12 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-accent hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"><a href="home.html">Sign Up</a></button>
+                    </div>
+                </form>
+                <div class="mt-6 text-center">
+                    <div class="text-sm text-white mb-4">Or</div>
+                    <div class="flex justify-center space-x-4">
+                        <button class="inline-flex items-center px-3 py-2 h-10 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/88b5e92495769679f064f719b0efb838f6910edcb64542a8725a97239428ed31?" alt="Google" class="w-5 h-5 mr-2"> 
+                            <span>Sign up with Google</span>
+                        </button>
+                        <button class="inline-flex items-center px-3 py-2 h-10 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e426488ef67741140ae6ec2f77588c0a661985fd1fc108f042b0e9e83952dc4?" alt="Apple" class="w-5 h-5 mr-2"> 
+                            <span>Sign up with Apple</span>
+                        </button>
+                    </div>
+                    <div class="mt-6 text-sm text-white">
+                        Already have an account?
+                        <a href="login.html" class="text-accent font-medium">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Primary Background Section with Image -->
+        <div class="w-full md:w-[50%] lg:w-[55%] bg-white relative flex justify-center items-center md:min-h-screen">
+            <div class="hidden md:flex md:justify-center md:items-center md:w-full md:h-full">
+                <img loading="lazy" src="../asset/image/signup.png" class="w-3/4 md:w-2/4 lg:w-2/4" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

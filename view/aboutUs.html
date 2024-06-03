@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#172D44',
+                        secondary: '#4A4B51',
+                        accent: '#F7B703',
+                        description: '#88959A'
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <nav class="flex justify-between items-center px-7 w-full text-white bg-slate-800 sm:flex-wrap sm:px-5 sm:max-w-full">
+            <!-- Hamburger Menu Icon -->
+            <button class="block sm:hidden text-gray-500" onclick="toggleMenu()">
+                <img src="../asset/image/burgerIcon.jpg" alt="Menu" class="w-6 h-6">
+            </button>
+
+            <!-- Logo -->
+            <img loading="lazy" src="../asset/image/logo (1).png" class="h-[80px] w-[80px] mx-auto sm:mx-0" alt="Heng Traveling Logo" />
+
+            <!-- Navigation Links for Large Screens -->
+            <div class="hidden sm:flex flex-auto gap-12 my-auto">
+                <a href="home.html" class="hover:underline  font-medium ">Home</a>
+                <a href="#" class="hover:underline  font-medium">Category</a>
+                <a href="#" class="hover:underline  font-medium">Contact</a>
+                <a href="aboutUs.html" class="hover:underline font-medium">About us</a>
+            </div>
+
+            <!-- Account Icons -->
+            <div class="flex gap-4 my-auto">
+                <div class="hidden sm:flex justify-center px-10 py-2.5 whitespace-nowrap bg-accent hover:bg-primary rounded-xl sm:px-5"><a href="login.html">Login</a></div>
+                <div class="hidden sm:flex justify-center px-10 py-2.5 rounded-xl bg-primary hover:bg-accent sm:px-5"><a href="signup.html">Sign up</a></div>
+                <div class="block sm:hidden text-gray-500">
+                    <img src="../asset/image/iconPerson.png" alt="Account" class="w-6 h-6">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden sm:hidden flex flex-col gap-5 px-5 py-3 bg-slate-800 text-white transition-all duration-300 ease-in-out">
+            <a href="test.html" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Category</a>
+            <a href="#" class="hover:underline">Contact</a>
+            <a href="aboutUs.html" class="hover:underline">About us</a>
+        </div>
+    </header>
+
+    <main class="flex flex-col pb-6 bg-white">
+        <section class="self-center mt-4 text-6xl font-medium text-center text-black max-md:text-4xl">
+            About us
+        </section>
+        <hr class="shrink-0 self-center w-full h-px border border-solid bg-neutral-200 border-neutral-200 max-w-[1280px]" />
+
+        <section class="flex gap-5 justify-between mt-9 w-full max-md:flex-wrap max-md:max-w-full">
+            <img loading="lazy" src="../asset/image/people2.png" class="w-full aspect-[1.9] max-md:max-w-full" alt="People traveling" />
+            <div class="flex flex-col px-5 my-auto max-md:max-w-full">
+                <div class="text-4xl text-left max-w-[660px] font-medium sm:text-right text-black max-md:max-w-full">Welcome to Heng Traveling!</div>
+                <div class="mt-5 text-xl w-[600px] sm:w-full pr-32 text-left text-neutral-400 sm:text-right">
+                    At Heng Traveling, we believe that travel is not just about reaching a destination—it's about the journey, the experiences, and the memories you create along the way. Our mission is to inspire and empower travelers to explore the world, one adventure at a time.
+                </div>
+            </div>
+        </section>
+        <hr class="shrink-0 self-center w-full h-px border border-solid bg-neutral-200 border-neutral-200 max-w-[1280px]" />
+
+        <section class="flex flex-col pr-4 pl-12 mt-20 w-full max-md:pl-5 max-md:mt-10 max-md:max-w-full">
+            <article>
+                <h1 class="text-4xl font-medium pl-2 sm:pl-16 text-black max-md:max-w-full">Our Story</h1>
+                <p class="mt-6 pl-2 max-w-[500px] text-xl text-neutral-400 sm:pl-16">
+                    Founded by a group of avid travelers, Wanderlust Adventures was born out of a passion for discovering new places and sharing those experiences with others. We realized that the world is full of incredible destinations, rich cultures, and breathtaking landscapes just waiting to be explored. Our goal is to make travel accessible, enjoyable, and unforgettable for everyone.
+                </p>
+            </article>
+        </section>
+      </main>
+        <footer class="flex flex-col">
+            <div class="flex flex-col pb-4 pl-16 mt-12 w-full bg-white max-sm:pl-5 max-sm:mt-10">
+                <hr class="shrink-0 self-center w-full h-px border border-solid bg-neutral-200 border-neutral-200 max-w-[1280px]" />
+                <div class="flex gap-5 mt-8 w-full max-sm:flex-wrap max-sm:max-w-full">
+                    <section class="flex flex-col my-auto max-sm:max-w-full">
+                        <div class="flex flex-col pl-3.5 mr-24">
+                            <h2 class="text-2xl leading-9 text-black">Heng Traveling</h2>
+                            <h3 class="mt-20 text-base font-medium leading-6 text-slate-800 max-sm:mt-10">Follow Us</h3>
+                            <div class="flex gap-2 px-0.5 mt-2">
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/199c9a3c64fa87237dabe74b1aff1fe617935141f37a07ba364b7012e90e628c?" class="shrink-0 w-10 aspect-square" alt="Social Media Icon 1" />
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1bac3668b19309ab1c82835d154f9962b24bad9c262723d53374e3173c3e762?" class="shrink-0 w-10 aspect-square" alt="Social Media Icon 2" />
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9c8d64becb556072cf4288b2dadd32d18a3ce8e19d5cc15f298f66d1125313b?" class="shrink-0 w-10 aspect-square" alt="Social Media Icon 3" />
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0828515f09127d365461d17e1036e88788811bd5c0258116139d171a870fbe56?" class="shrink-0 w-10 aspect-square" alt="Social Media Icon 4" />
+                            </div>
+                            <h3 class="mt-7 text-base font-medium leading-6 text-slate-800">Become a member</h3>
+                            <p class="mt-7 text-base font-medium leading-6 text-neutral-600">Join our Community of travel</p>
+                        </div>
+                        <div class="justify-center w- px-10 py-5 mt-7 text-sm font-medium text-center text-white bg-slate-800 rounded-[30px]">
+                            Create Account
+                        </div>
+                    </section>
+                    <div class="flex-auto max-sm:max-w-full">
+                        <nav class="flex gap-5 max-sm:flex-col max-sm:gap-0">
+                            <section class="flex flex-col w-[33%] hidden sm:block max-sm:ml-0 max-sm:w-full">
+                                <h4 class="text-base font-medium leading-6 text-zinc-700 max-sm:mt-10 text-slate-800">TOP DESTINATION</h4>
+                                <ul class="mt-6">
+                                    <li class="mt-6">Kompot</li>
+                                    <li class="mt-6">Kohkong</li>
+                                    <li class="mt-6">MondolKiri</li>
+                                    <li class="mt-6">Ratanakkiri</li>
+                                    <li class="mt-6">Siemreap</li>
+                                    <li class="mt-6">Phnompenh</li>
+                                    <li class="mt-6">Sihanuk</li>
+                                </ul>
+                            </section>
+                            <section class="flex flex-col ml-5 w-[33%] hidden sm:block max-sm:ml-0 max-sm:w-full">
+                                <h4 class="text-base font-medium leading-6 text-zinc-700 max-sm:mt-10 text-slate-800">TRAVEL INTERESTS</h4>
+                                <ul class="mt-6">
+                                    <li class="mt-6">Adventure Travel</li>
+                                    <li class="mt-6">Art and Cultures</li>
+                                    <li class="mt-6">Family Holidays</li>
+                                    <li class="mt-6">Festivals</li>
+                                    <li class="mt-6">Honeymoon</li>
+                                    <li class="mt-6">Road Trips</li>
+                                    <li class="mt-6">Wildlife</li>
+                                </ul>
+                            </section>
+                            <section class="flex flex-col ml-5 w-[33%] hidden sm:block max-sm:ml-0 max-sm:w-full">
+                                <h4 class="text-base font-medium leading-6 text-zinc-700 max-sm:mt-10 text-slate-800">Hotel</h4>
+                                <ul class="mt-6">
+                                    <li class="mt-6">Sokha Hotels</li>
+                                    <li class="mt-6">Hyatt Regency Hotel</li>
+                                    <li class="mt-6">Rosewood Hotel</li>
+                                    <li class="mt-6 text-slate-800">About us</li>
+                                    <li class="mt-6">Contact Us</li>
+                                    <li class="mt-6">Privacy and policy</li>
+                                    <li class="mt-6 leading-6">Rate us<br /></li>
+                                </ul>
+                            </section>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
